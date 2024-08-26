@@ -1,0 +1,11 @@
+  /* Toolbar */
+  .spacer {
+    flex: 1 1 auto;
+  }
+
+  /* Structure */
+.container {
+    display: flex;
+    flex-direction: column;
+  }
+  

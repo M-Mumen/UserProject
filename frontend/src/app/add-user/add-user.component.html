@@ -1,0 +1,32 @@
+<mat-card>
+    <mat-card-title>User Creation Form</mat-card-title>
+    <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+        
+    <mat-form-field appearance="fill" >
+            <mat-label>User Name</mat-label>
+            <input matInput formControlName="userName" required>
+      </mat-form-field>
+
+    <mat-form-field appearance="fill" >
+        <mat-label>First Name</mat-label>
+        <input matInput formControlName="firstName" required>
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill" >
+        <mat-label>Last Name</mat-label>
+        <input matInput formControlName="lastName" required>
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill" >
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email" type="email" required>
+      </mat-form-field>
+
+      <div>
+        
+        <button mat-raised-button color="primary" type="submit">Submit</button>
+        <button mat-raised-button color="accent" (click)="cancel()">Cancel</button>
+      </div>
+
+    </form>
+  </mat-card>
